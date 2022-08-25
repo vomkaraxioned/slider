@@ -261,18 +261,22 @@ h1 {
 
 @keyframes expand-next {
     0% {
+        display: flex;
         transform: translateX(-0);
     }
     100% {
+        display: none;
         transform: translateX(-100%);
     }
 }
 
 @keyframes expand-prev {
     0% {
+        display: flex;
         transform: translateX(0);
     }
     100% {
+        display: none;
         transform: translateX(100%);
     }
 }
@@ -283,13 +287,13 @@ h1 {
 }
 
 .expand-next {
-    animation: expand-next 2s;
-    /* transition: all 5s; */
+    animation: expand-next 5s;
+    transition: all 5s;
 }
 
 .expand-prev {
-    animation: expand-prev 2s;
-    /* transition: all 5s; */
+    animation: expand-prev 5s;
+    transition: all 5s;
 }
 
 .prev,

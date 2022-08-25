@@ -33,23 +33,18 @@ nxt.addEventListener('click', () => {
 function slide() {
     let active = document.querySelector(".active");
     let activeBtn = document.querySelector(".btn-active");
+    let anime;
     active.classList.remove('active');
     activeBtn.classList.remove('btn-active');
-    alert(currentIndex);
     if (currentIndex > prevIndex) {
-        active.classList.add("expand-next");
-        setTimeout(() => {
-            active.classList.remove("expand-next");
-        }, 1000);
-
+        slides[prevIndex].classList.add("expand-next");
+        anime = document.querySelector(".expand-next");
     } else {
-        active.classList.add("expand-prev");
-        setTimeout(() => {
-            active.classList.remove("expand-prev");
-        }, 1000);
-
+        slides[prevIndex].classList.add("expand-prev");
+        anime = document.querySelector(".expand-prev");
     }
     slides[currentIndex].classList.add('active');
     buttons[currentIndex].classList.add('btn-active');
+    // anime.className = "slide";
     prevIndex = currentIndex;
 }
