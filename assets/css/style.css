@@ -259,29 +259,37 @@ h1 {
     display: none;
 }
 
-@keyframes expand {
+@keyframes expand-next {
     0% {
-        display: none;
+        transform: translateX(-0);
     }
     100% {
-        display: flex;
+        transform: translateX(-100%);
     }
 }
 
-
-/* @keyframes dissolve {
+@keyframes expand-prev {
     0% {
-        display: none;
+        transform: translateX(0);
     }
     100% {
-        display: flex;
+        transform: translateX(100%);
     }
-} */
+}
 
 .active {
     display: flex;
-    animation: expand 5s;
     transition: all 5s;
+}
+
+.expand-next {
+    animation: expand-next 2s;
+    /* transition: all 5s; */
+}
+
+.expand-prev {
+    animation: expand-prev 2s;
+    /* transition: all 5s; */
 }
 
 .prev,
