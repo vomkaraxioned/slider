@@ -259,19 +259,29 @@ h1 {
     display: none;
 }
 
-.left {
-    transform: translate(-100%);
-    transition: all 2s;
+@keyframes expand {
+    0% {
+        display: none;
+    }
+    100% {
+        display: flex;
+    }
 }
 
-.left {
-    transform: translate(100%);
-    transition: all 2s;
-}
+
+/* @keyframes dissolve {
+    0% {
+        display: none;
+    }
+    100% {
+        display: flex;
+    }
+} */
 
 .active {
     display: flex;
-    transition: all 1s;
+    animation: expand 5s;
+    transition: all 5s;
 }
 
 .prev,
