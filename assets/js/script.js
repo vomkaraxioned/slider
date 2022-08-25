@@ -6,6 +6,7 @@ const slides = document.getElementsByClassName("slide");
 const prev = document.querySelector(".prev");
 const nxt = document.querySelector(".next")
 const buttons = document.querySelectorAll(".img");
+let prevIndex;
 let currentIndex;
 let anime;
 buttons.forEach((btn, index) => {
