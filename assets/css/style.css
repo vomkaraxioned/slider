@@ -213,7 +213,6 @@ li {
 /*for wrapper*/
 
 .wrapper {
-    max-width: 1360px;
     width: 100%;
     margin: 0 auto;
 }
@@ -249,12 +248,14 @@ h1 {
 }
 
 .slider {
+    width: 100%;
     min-height: 500px;
     max-height: 500px;
     display: flex;
 }
 
 .slide {
+    width: 100%;
     display: none;
 }
 
