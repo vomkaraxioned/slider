@@ -281,8 +281,18 @@ h1 {
     }
 }
 
+@keyframes increase {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 .active {
     display: flex;
+    animation: increase 2s;
     transition: all 5s;
 }
 

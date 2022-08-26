@@ -45,6 +45,6 @@ function slide() {
     }
     slides[currentIndex].classList.add('active');
     buttons[currentIndex].classList.add('btn-active');
-    // anime.className = "slide";
+    anime.className = "slide";
     prevIndex = currentIndex;
 }
